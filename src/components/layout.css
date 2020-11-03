@@ -75,11 +75,11 @@ h1 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
+  margin-bottom: "1.45rem;";
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -120,6 +120,8 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+img:hover{ position: relative; 
+  top: -5px;}
 svg:not(:root) {
   overflow: hidden;
 }
