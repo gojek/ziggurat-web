@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/ziggurat-web",
   siteMetadata: {
     title: `Ziggurat`,
     description: `Redefining how you work with real time events, powering more than 250 applications at Gojek.`,
@@ -16,6 +17,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     'gatsby-plugin-theme-ui',
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
