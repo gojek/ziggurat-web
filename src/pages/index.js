@@ -29,11 +29,12 @@ const IndexPage = () => (
     <Image/>
     </Flex>
   {/* </div> */}
+  <br/>
   <div style={{display: "flex", justifyContent:"center"}}>
   <a href="https://google.com">
     <Button >
       <h1 style={{marginBottom: "0px"}}>
-        Start
+        View on GitHub
         </h1>
         </Button>
         </a>
