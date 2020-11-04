@@ -1,13 +1,10 @@
 /** @jsx jsx */
-import React from "react"
-import { Link } from "gatsby"
-import {jsx, Button, Grid, Flex } from 'theme-ui'
+import {jsx, Button, Flex } from 'theme-ui'
 
 import Layout from "../components/layout"
 import ZigguratLogo from "../components/ziggurat_logo"
 import GitHubLogo from "../components/github_logo"
 import SEO from "../components/seo"
-import { fontSize } from "styled-system"
 
 const handlePageChange = () => {
   window.location.href="https://github.com/gojek/ziggurat"

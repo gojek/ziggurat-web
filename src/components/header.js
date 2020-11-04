@@ -2,7 +2,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import {jsx} from 'theme-ui'
-import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
