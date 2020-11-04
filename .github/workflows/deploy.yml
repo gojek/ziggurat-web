@@ -1,0 +1,24 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 12.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build and Deploy
+        run: npm run clean
+        run: npm run deploy
