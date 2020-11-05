@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
+      - run: git config --global user.email 'nikhilesh-parupalli'
+      - run: git config --global user.name 'nikhilesh.reddy.99@gmail.com'
       - name: Set Node.js
         uses: actions/setup-node@master
         with:
