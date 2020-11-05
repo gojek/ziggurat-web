@@ -33,7 +33,7 @@ const IndexPage = () => (
   {/* </div> */}
   <br/>
   <div style={{display: "flex", justifyContent:"center"}}>
-    <Button onClick={handlePageChange} style={{display:"flex"}}>
+    <Button onClick={handlePageChange} style={{padding: "15px", display:"flex"}}>
         <GitHubLogo/>
       <h2 style={{marginBottom: "0px"}}>
          View on GitHub
