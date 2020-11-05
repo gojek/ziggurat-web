@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/ziggurat-web",
   siteMetadata: {
     title: `Ziggurat`,
     description: `Redefining how you work with real time events, powering more than 250 applications at Gojek.`,
