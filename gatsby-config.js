@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ziggurat`,
     description: `Redefining how you work with real time events, powering more than 250 applications at Gojek.`,
+    siteUrl: `https://ziggurat.dev`,
     author: `@rohanlekhwani`,
   },
   plugins: [
@@ -17,11 +18,12 @@ module.exports = {
     'gatsby-plugin-theme-ui',
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `ziggurat`,
+        short_name: `ziggurat`,
         start_url: `/`,
         background_color: `#54b67d`,
         theme_color: `#54b67d`,
