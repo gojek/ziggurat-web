@@ -1,3 +1,6 @@
+import '../fonts/fonts.css'
+import "typeface-fira-mono"
+
 export default {
     colors: {
       text: "#333",
@@ -6,11 +9,12 @@ export default {
       secondary: "#ff6347",
     },
     fonts: {
-      body: "system-ui, sans-serif",
+      body: "Maison Neue",
       heading: "system-ui, sans-serif",
       monospace: "Menlo, monospace",
       title: "Poppins, sans-serif",
-      header: "Balsamiq Sans, cursive"
+      header: "Balsamiq Sans, cursive",
+      code: "Fira Mono"
     },
     fontWeights: {
       body: 400,
