@@ -11,9 +11,9 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <Grid
-      columns={[3, '3fr 0.3fr 0.3fr']}
-      style={{
-        padding: '50px 100px 50px 100px',
+      columns={[3, '3fr 0.6fr 0.6fr']}
+      sx={{
+        padding: '5vh 5vw 5vh 5vw',
         maxWidth: "100%",
       }}
     >
@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
         display: "flex",
         alignItems: "center"
       }}>
-      <h2 style={{ margin: 0 }}>
+      <h2 sx={{ margin: 0, fontSize: ['0.8rem','0.8rem','0.8rem','1.5rem'] }}>
         <Link
           to="/"
           sx={{
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
         alignItems: "center",
         justifyContent: "flex-end"
       }}>
-        <h3 sx={{ marginBottom: "0px", color: "white", fontFamily: "body"}}>
+        <h3 sx={{ marginBottom: "0px", color: "white", fontFamily: "body", fontSize: ['0.8rem','0.8rem','0.8rem','1.5rem']}}>
       <a href="#description"
         style={{
           textDecoration: "none",
@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => (
         alignItems: "center",
         justifyContent: "flex-end"
       }}>
-      <h3 sx={{ marginBottom: "0px", fontFamily: "body"}}>
+      <h3 sx={{ marginBottom: "0px", fontFamily: "body", fontSize: ['0.8rem','0.8rem','0.8rem','1.5rem']}}>
         <a target="_blank" rel="noreferrer" href="https://github.com/gojek/ziggurat"
         style={{
           color: "white",

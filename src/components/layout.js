@@ -1,10 +1,11 @@
+/** @jsx jsx */
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
-
+import {jsx} from 'theme-ui'
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -41,7 +42,14 @@ const Layout = ({ children }) => {
           justifyContent: "center",
           alignItems: "baseline"
         }}>
-          <p>Built with</p> <GojekHeart/> <p>at Gojek</p>
+          <p
+            sx={{
+              fontFamily: "body",
+            }}
+          >Built with</p> <GojekHeart/> <p
+          sx={{
+            fontFamily: "body",
+          }}>at Gojek</p>
         </footer>
       </div>
     </>

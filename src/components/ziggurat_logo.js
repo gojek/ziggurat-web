@@ -1,4 +1,5 @@
-import React from "react"
+/** @jsx jsx */
+import {jsx} from 'theme-ui'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -30,7 +31,7 @@ const ZigguratLogo = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img style={{width: "20%"}} fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img sx={{width: ['50%','40%','30%','20%']}} fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 export default ZigguratLogo
