@@ -28,7 +28,8 @@ const IndexPage = () => (
           fontFamily: "body",
           fontSize: "2.5vw",
           color: "white",
-          textAlign: "center"
+          textAlign: "center",
+          letterSpacing: "0.05em"
           }}>Redefining how you work with real time events.</h1>
       <p 
       sx={{
@@ -38,12 +39,13 @@ const IndexPage = () => (
          backgroundSize: "100%"
          }}>
         <span className="gradient-text">Powering more than 250 applications at Gojek.</span></p>
+        <br/>
       <a href="https://github.com/gojek/ziggurat"
       target="_blank"
       rel="noreferrer"
        sx={{
         borderRadius: "5px",
-        background: "#54b67d",
+        background: "#31C38B",
         padding: "15px",
         display:"flex",
         textDecoration: "none"}}>

@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           sx={{
-            color: `#54b67d`,
+            color: `#31C38B`,
             textDecoration: `none`,
             fontFamily: "body"
           }}
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
         alignItems: "center",
         justifyContent: "flex-end"
       }}>
-        <h3 style={{ marginBottom: "0px", color: "white", fontFamily: "body"}}>
+        <h3 sx={{ marginBottom: "0px", color: "white", fontFamily: "body"}}>
       <a href="#description"
         style={{
           textDecoration: "none",
@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => (
         alignItems: "center",
         justifyContent: "flex-end"
       }}>
-      <h3 style={{ marginBottom: "0px", fontFamily: "body"}}>
+      <h3 sx={{ marginBottom: "0px", fontFamily: "body"}}>
         <a target="_blank" rel="noreferrer" href="https://github.com/gojek/ziggurat"
         style={{
           color: "white",
