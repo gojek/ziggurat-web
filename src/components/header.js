@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
     <Grid
       columns={[3, '3fr 0.3fr 0.3fr']}
       style={{
-        padding: "40px",
+        padding: '50px 100px 50px 100px',
         maxWidth: "100%",
       }}
     >
