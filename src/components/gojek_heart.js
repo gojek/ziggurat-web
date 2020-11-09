@@ -13,10 +13,10 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-const GitHubLogo = () => {
+const GojekHeart = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "github-icon.png" }) {
+      placeholderImage: file(relativePath: { eq: "heart.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -30,7 +30,7 @@ const GitHubLogo = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img style={{width: "30px", marginRight: "10px"}} fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img style={{width: "20px", marginLeft: "10px", marginRight: "10px"}} fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default GitHubLogo
+export default GojekHeart

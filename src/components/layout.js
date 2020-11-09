@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import GojekHeart from "../components/gojek_heart"
 
 import Header from "./header"
 import "./layout.css"
@@ -33,13 +34,15 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        {/* <footer style={{
-          marginTop: `2rem`
+        <footer style={{
+          marginTop: `2rem`,
+          color: "white",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "baseline"
         }}>
-          © {new Date().getFullYear()},
-          {` `}
-          <a href="https://github.com/gojek/ziggurat">Ziggurat</a>
-        </footer> */}
+          <p>Built with</p> <GojekHeart/> <p>at Gojek</p>
+        </footer>
       </div>
     </>
   )

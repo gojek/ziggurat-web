@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ziggurat`,
+    title: `ziggurat`,
     description: `Redefining how you work with real time events, powering more than 250 applications at Gojek.`,
     siteUrl: `https://ziggurat.dev`,
     author: `@rohanlekhwani`,
