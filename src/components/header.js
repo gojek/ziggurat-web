@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import {jsx} from 'theme-ui'
+import {jsx, Grid, Box} from 'theme-ui'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -10,13 +10,19 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
+    <Grid
+      columns={[3, '3fr 0.3fr 0.3fr']}
       style={{
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: "40px",
+        maxWidth: "100%",
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <Box
+      sx={{
+        display: "flex",
+        alignItems: "center"
+      }}>
+      <h2 style={{ margin: 0 }}>
         <Link
           to="/"
           sx={{
@@ -27,8 +33,38 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
-    </div>
+      </h2>
+      </Box>
+      <Box 
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-end"
+      }}>
+        <h3 style={{ marginBottom: "0px", color: "white", fontFamily: "body"}}>
+      <a href="#description"
+        style={{
+          textDecoration: "none",
+          color: "white"
+        }}>About</a>
+        </h3>
+      </Box>
+      <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-end"
+      }}>
+      <h3 style={{ marginBottom: "0px", fontFamily: "body"}}>
+        <a target="_blank" rel="noreferrer" href="https://github.com/gojek/ziggurat"
+        style={{
+          color: "white",
+          textDecoration: "none",
+        }}>Source</a>
+        
+      </h3>
+      </Box>
+    </Grid>
   </header>
 )
 
