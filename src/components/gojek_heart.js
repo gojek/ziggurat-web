@@ -30,7 +30,12 @@ const GojekHeart = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img style={{width: "20px", marginLeft: "10px", marginRight: "10px"}} fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <Img
+      style={{ width: "20px", marginLeft: "10px", marginRight: "10px" }}
+      fluid={data.placeholderImage.childImageSharp.fluid}
+    />
+  )
 }
 
 export default GojekHeart

@@ -5,7 +5,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
-import {jsx} from 'theme-ui'
+import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -35,21 +35,30 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`,
-          color: "white",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "baseline"
-        }}>
+        <footer
+          style={{
+            marginTop: `2rem`,
+            color: "white",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "baseline",
+          }}
+        >
           <p
             sx={{
               fontFamily: "body",
             }}
-          >Built with</p> <GojekHeart/> <p
-          sx={{
-            fontFamily: "body",
-          }}>at Gojek</p>
+          >
+            Built with
+          </p>{" "}
+          <GojekHeart />{" "}
+          <p
+            sx={{
+              fontFamily: "body",
+            }}
+          >
+            at Gojek
+          </p>
         </footer>
       </div>
     </>
