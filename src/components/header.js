@@ -13,7 +13,8 @@ const Header = ({ siteTitle }) => (
     <Grid
       columns={[3, "3fr 0.6fr 0.6fr"]}
       sx={{
-        padding: "5vh 5vw 5vh 5vw",
+        padding: "7vh 7vw 0vh 7vw",
+        paddingBottom: ["7vh", "7vh", "7vh", "7vh", "0vh"],
         maxWidth: "100%",
       }}
     >
@@ -26,7 +27,7 @@ const Header = ({ siteTitle }) => (
         <h2
           sx={{ 
             margin: 0,
-            fontSize: ["0.8rem", "0.8rem", "1.2rem", "1.5rem"],
+            fontSize: ["0.8rem", "0.8rem", "1.2rem", "1.5rem", "1.5rem"],
           }}
         >
           <Link
@@ -53,7 +54,7 @@ const Header = ({ siteTitle }) => (
             marginBottom: "0px",
             color: "white",
             fontFamily: "body",
-            fontSize: ["0.8rem", "0.8rem", "1.2rem", "1.5rem"],
+            fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
           }}
         >
           <a
@@ -78,7 +79,7 @@ const Header = ({ siteTitle }) => (
           sx={{
             marginBottom: "0px",
             fontFamily: "body",
-            fontSize: ["0.8rem", "0.8rem", "1.2rem", "1.5rem"],
+            fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
           }}
         >
           <a

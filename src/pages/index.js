@@ -17,6 +17,7 @@ const IndexPage = () => (
         minHeight: "fit-content",
         width: "100vw",
         maxWidth: "100%",
+        height: "100vh",
         marginBottom: "10vh",
       }}
     >
@@ -24,13 +25,14 @@ const IndexPage = () => (
         sx={{
           alignItems: "center",
           flexDirection: "column",
+          justifyContent: "center"
         }}
       >
         <ZigguratLogo />
         <h1
           sx={{
             fontFamily: "body",
-            fontSize: ["0.8rem", "1.1rem", "1.5rem", "1.8rem"],
+            fontSize: ["1rem", "1.2rem", "1.3rem", "1.5rem", "2.3rem"],
             color: "white",
             textAlign: "center",
             letterSpacing: "0.05em",
@@ -41,7 +43,7 @@ const IndexPage = () => (
         <p
           sx={{
             fontFamily: "body",
-            fontSize: ["0.55rem", "0.8rem", "1.0rem", "1.3rem"],
+            fontSize: ["0.55rem", "0.8rem", "1rem", "1.3rem", "1.8rem"],
             color: "white",
             backgroundSize: "100%",
             textAlign: "center",
@@ -59,17 +61,20 @@ const IndexPage = () => (
           sx={{
             borderRadius: "5px",
             background: "#31C38B",
-            padding: ["10px", "10px", "15px", "20px"],
+            padding: ["10px", "10px", "15px", "15px", "15px"],
             display: "flex",
             textDecoration: "none",
+            justifyContent: "center",
+            alignItems: "center"
           }}
         >
           <h3
             sx={{
               color: "white",
+              marginTop: "0px",
               marginBottom: "0px",
               fontFamily: "body",
-              fontSize: ["0.8rem", "1.1rem", "1.5rem", "1.8rem"],
+              fontSize: ["0.55rem", "0.8rem", "1rem", "1.3rem", "1.8rem"],
             }}
           >
             Get Started →
@@ -84,7 +89,7 @@ const IndexPage = () => (
         minHeight: "fit-content",
         width: "100vw",
         maxWidth: "100%",
-        marginBottom: "10vh",
+        height: "90vh",
       }}
     >
       <Flex
@@ -98,7 +103,7 @@ const IndexPage = () => (
           sx={{
             fontFamily: "body",
             color: "white",
-            fontSize: ["1.6rem", "2.4rem", "3rem", "3.6rem"],
+            fontSize: ["1rem", "1.2rem", "1.3rem", "1.5rem", "2.3rem"],
           }}
         >
           Ziggurat
@@ -107,7 +112,7 @@ const IndexPage = () => (
           sx={{
             fontFamily: "body",
             color: "#9B7D8E",
-            fontSize: ["1.0rem", "1.5rem", "1.875rem", "2.25rem"],
+            fontSize: ["0.55rem", "0.8rem", "1rem", "1.3rem", "1.8rem"],
           }}
         >
           /ˈzɪɡʊˌræt/
@@ -119,7 +124,7 @@ const IndexPage = () => (
             color: "white",
             textAlign: "center",
             width: "60%",
-            fontSize: ["0.55rem", "0.8rem", "1.0rem", "1.3rem"],
+            fontSize: ["0.4rem", "0.6rem", "0.8rem", "1rem", "1.5rem"],
             lineHeight: "1.5",
           }}
         >
@@ -136,14 +141,14 @@ const IndexPage = () => (
             borderStyle: "solid",
             color: "white",
             textAlign: "left",
-            padding: ["10px", "10px", "15px", "20px"],
+            padding: ["10px", "10px", "10px", "15px", "20px"],
           }}
         >
           <code>
             <ul
               sx={{
                 listStyle: "none",
-                fontSize: ["0.4rem", "0.6rem", "0.7rem", "0.9rem"],
+                fontSize: ["0.3rem", "0.5rem", "0.7rem", "1rem", "1.3rem"],
               }}
             >
               <li>→ reading messages from Kafka</li>
