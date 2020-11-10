@@ -25,7 +25,7 @@ export default {
     body: 1.5,
     heading: 1.125,
   },
-  breakpoints: ["300px", "740px", "992px", "1200px"],
+  breakpoints: ["320px", "640px", "760px", "1080px", "1440px"],
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
 }

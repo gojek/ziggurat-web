@@ -49,15 +49,7 @@ const Layout = ({ children }) => {
               fontFamily: "body",
             }}
           >
-            Built with
-          </p>{" "}
-          <GojekHeart />{" "}
-          <p
-            sx={{
-              fontFamily: "body",
-            }}
-          >
-            at Gojek
+            Built with ❤️ at Gojek
           </p>
         </footer>
       </div>
