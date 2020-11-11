@@ -32,7 +32,7 @@ const IndexPage = () => (
         <h1
           sx={{
             fontFamily: "body",
-            fontSize: ["1rem", "1.2rem", "1.3rem", "1.5rem", "2.3rem"],
+            fontSize: ["1.3rem", "1.5rem", "2.25rem", "1.5rem", "2.3rem"],
             color: "white",
             textAlign: "center",
             letterSpacing: "0.05em",
@@ -43,7 +43,7 @@ const IndexPage = () => (
         <p
           sx={{
             fontFamily: "body",
-            fontSize: ["0.55rem", "0.8rem", "1rem", "1.3rem", "1.8rem"],
+            fontSize: ["0.867rem", "1rem", "1.5rem", "1.3rem", "1.8rem"],
             color: "white",
             backgroundSize: "100%",
             textAlign: "center",
@@ -74,7 +74,7 @@ const IndexPage = () => (
               marginTop: "0px",
               marginBottom: "0px",
               fontFamily: "body",
-              fontSize: ["0.55rem", "0.8rem", "1rem", "1.3rem", "1.8rem"],
+              fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
             }}
           >
             Get Started →

@@ -9,12 +9,13 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import GojekHeart from "../components/gojek_heart"
 
 import Header from "./header"
+import BottomNavbar from "./bottom_navbar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

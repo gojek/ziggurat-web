@@ -1,17 +1,30 @@
 /** @jsx jsx */
+import React, {useEffect, useState } from 'react'
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { jsx, Grid, Box } from "theme-ui"
 
-const Header = ({ siteTitle }) => (
-  <header
+const Header = ({ siteTitle }) => {
+
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    function updateWidth() {
+      setWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', updateWidth);
+    updateWidth();
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
+  return ( 
+    <header
     style={{
       background: `#0e0e0e`,
       marginBottom: `1.45rem`,
     }}
   >
     <Grid
-      columns={[3, "3fr 0.6fr 0.6fr"]}
+      columns={width>= 640? [ 3, "3fr 0.6fr 0.6fr"] : [ 1 ]}
       sx={{
         padding: "7vh 7vw 0vh 7vw",
         paddingBottom: ["7vh", "7vh", "7vh", "7vh", "0vh"],
@@ -22,12 +35,13 @@ const Header = ({ siteTitle }) => (
         sx={{
           display: "flex",
           alignItems: "center",
+          justifyContent: width>=640? "left": "center"
         }}
       >
         <h2
           sx={{ 
             margin: 0,
-            fontSize: ["0.8rem", "0.8rem", "1.2rem", "1.5rem", "1.5rem"],
+            fontSize: ["1.7rem", "2rem", "1.5rem", "2rem", "1.5rem"],
           }}
         >
           <Link
@@ -42,6 +56,9 @@ const Header = ({ siteTitle }) => (
           </Link>
         </h2>
       </Box>
+      {width>= 640 && 
+      (
+        <>
       <Box
         sx={{
           display: "flex",
@@ -95,9 +112,13 @@ const Header = ({ siteTitle }) => (
           </a>
         </h3>
       </Box>
+      </>
+      )
+        }
     </Grid>
   </header>
-)
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
