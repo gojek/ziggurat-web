@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => {
         <h2
           sx={{ 
             margin: 0,
-            fontSize: ["1.7rem", "2rem", "1.5rem", "2rem", "1.5rem"],
+            fontSize: ["1.7rem", "2rem", "1.5rem", "2rem", "1.8rem"],
           }}
         >
           <Link

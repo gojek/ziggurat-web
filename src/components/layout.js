@@ -11,7 +11,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import BottomNavbar from "./bottom_navbar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -32,25 +31,32 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
         <footer
-          style={{
+          sx={{
+            width: "100vw",
+            height: "10vh",
+            maxWidth: "100%",
+            background: "#124531",
             marginTop: `2rem`,
             color: "white",
             display: "flex",
             justifyContent: "center",
-            alignItems: "baseline",
+            alignItems: "center",
+            marginBottom: "0px",
           }}
         >
           <p
             sx={{
               fontFamily: "body",
+              textAlign: "center",
+              marginBottom: "0px",
+              fontSize: ["0.8rem", "1rem", "1rem", "1rem", "1rem"]
             }}
           >
-            Built with ❤️ at Gojek
+            An open source project by gojek. Made with ❤️, ⚡️ and ☕️.
           </p>
         </footer>
       </div>

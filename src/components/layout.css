@@ -605,6 +605,7 @@ pre tt:after {
 }
 
 .gradient-text {
+  line-height: normal;
   background-color: #c15890;
   background-image: linear-gradient(45deg, #c15890, #31C38B);
   background-image: conic-gradient (#c15890, #31C38B);
