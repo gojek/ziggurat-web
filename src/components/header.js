@@ -2,19 +2,9 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import { jsx, Grid, Box } from "theme-ui"
+import { jsx, Box, Flex } from "theme-ui"
 
 const Header = ({ siteTitle }) => {
-
-  const [width, setWidth] = useState(0);
-  useEffect(() => {
-    function updateWidth() {
-      setWidth(window.innerWidth);
-    }
-    window.addEventListener('resize', updateWidth);
-    updateWidth();
-    return () => window.removeEventListener('resize', updateWidth);
-  }, []);
 
   return (
     <header
@@ -23,12 +13,13 @@ const Header = ({ siteTitle }) => {
         marginBottom: `1.45rem`,
       }}
     >
-      <Grid
-        columns={[3, "minmax(640px, 3fr) 0.6fr 0.6fr"]}
+      <Flex
         sx={{
           padding: "7vh 7vw 0vh 7vw",
           paddingBottom: ["7vh", "7vh", "7vh", "7vh", "0vh"],
           maxWidth: "100%",
+          justifyContent: ["center", "center", "left", "left", "left"]
+
         }}
       >
         <Box
@@ -36,6 +27,7 @@ const Header = ({ siteTitle }) => {
             display: "flex",
             alignItems: "center",
             justifyContent: ["center", "center", "left", "left", "left"],
+            width: "60%"
           }}
         >
           <h2
@@ -56,13 +48,12 @@ const Header = ({ siteTitle }) => {
             </Link>
           </h2>
         </Box>
-        {width >= 640 && (
-          <>
             <Box
               sx={{
-                display: "flex",
+                display: ["none", "none", "flex", "flex", "flex"],
                 alignItems: "center",
                 justifyContent: "flex-end",
+                width: "20%",
               }}
             >
               <h3
@@ -86,9 +77,10 @@ const Header = ({ siteTitle }) => {
             </Box>
             <Box
               sx={{
-                display: "flex",
+                display: ["none", "none", "flex", "flex", "flex"],
                 alignItems: "center",
                 justifyContent: "flex-end",
+                width: "20%",
               }}
             >
               <h3
@@ -111,9 +103,7 @@ const Header = ({ siteTitle }) => {
                 </a>
               </h3>
             </Box>
-          </>
-        )}
-      </Grid>
+      </Flex>
     </header>
   )
 }
