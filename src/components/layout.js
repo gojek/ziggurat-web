@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
             width: "100vw",
             height: "10vh",
             maxWidth: "100%",
-            background: "#124531",
+            background: "footer-background",
             marginTop: `2rem`,
             color: "white",
             display: "flex",
