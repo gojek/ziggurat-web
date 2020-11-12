@@ -35,7 +35,7 @@ const ZigguratLogo = () => {
     <Img
       sx={{
         width: ["80%", "60%", "40%", "45%", "40%", "25%"],
-        height: "100%"
+        height: "100%",
       }}
       fluid={data.placeholderImage.childImageSharp.fluid}
     />
