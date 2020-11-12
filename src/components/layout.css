@@ -51,6 +51,8 @@ template {
   display: none;
 }
 a {
+  margin-left: 1.45rem;
+  margin-right: 1.45rem;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -72,10 +74,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: "1.45rem;";
+  margin: 1.45rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -114,8 +113,8 @@ sup {
 img {
   border-style: none;
   max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 1.45rem;
+  margin-right: 1.45rem;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
@@ -256,8 +255,8 @@ textarea {
   box-sizing: inherit;
 }
 h2 {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 1.45rem;
+  margin-right: 1.45rem;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
@@ -397,8 +396,8 @@ dd {
   margin-bottom: 1.45rem;
 }
 p {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 1.45rem;
+  margin-right: 1.45rem;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
@@ -408,8 +407,8 @@ p {
   letter-spacing: 0.07em;
 }
 pre {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 1.45rem;
+  margin-right: 1.45rem;
   margin-top: 0;
   margin-bottom: 1.45rem;
   font-size: 0.85rem;
@@ -605,6 +604,7 @@ pre tt:after {
 }
 
 .gradient-text {
+  margin: 1.45rem;
   line-height: normal;
   background-color: #c15890;
   background-image: linear-gradient(45deg, #c15890, #31C38B);
