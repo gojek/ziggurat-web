@@ -7,6 +7,7 @@ export default {
     background: "#0e0e0e",
     primary: "#31C38B",
     secondary: "#9B7D8E",
+    "footer-background": "#124531",
   },
   fonts: {
     body: "Maison Neue",
