@@ -5,7 +5,6 @@ import PropTypes from "prop-types"
 import { jsx, Box, Flex } from "theme-ui"
 
 const Header = ({ siteTitle }) => {
-
   return (
     <header
       style={{
@@ -18,8 +17,7 @@ const Header = ({ siteTitle }) => {
           padding: "7vh 7vw 0vh 7vw",
           paddingBottom: ["7vh", "7vh", "7vh", "7vh", "0vh"],
           maxWidth: "100%",
-          justifyContent: ["center", "center", "left", "left", "left"]
-
+          justifyContent: ["center", "center", "left", "left", "left"],
         }}
       >
         <Box
@@ -27,7 +25,7 @@ const Header = ({ siteTitle }) => {
             display: "flex",
             alignItems: "center",
             justifyContent: ["center", "center", "left", "left", "left"],
-            width: "60%"
+            width: "60%",
           }}
         >
           <h2
@@ -48,61 +46,61 @@ const Header = ({ siteTitle }) => {
             </Link>
           </h2>
         </Box>
-            <Box
-              sx={{
-                display: ["none", "none", "flex", "flex", "flex"],
-                alignItems: "center",
-                justifyContent: "flex-end",
-                width: "20%",
+        <Box
+          sx={{
+            display: ["none", "none", "flex", "flex", "flex"],
+            alignItems: "center",
+            justifyContent: "flex-end",
+            width: "20%",
+          }}
+        >
+          <h3
+            sx={{
+              marginBottom: "0px",
+              color: "white",
+              fontFamily: "body",
+              fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
+            }}
+          >
+            <a
+              href="#description"
+              style={{
+                textDecoration: "none",
+                color: "white",
               }}
             >
-              <h3
-                sx={{
-                  marginBottom: "0px",
-                  color: "white",
-                  fontFamily: "body",
-                  fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
-                }}
-              >
-                <a
-                  href="#description"
-                  style={{
-                    textDecoration: "none",
-                    color: "white",
-                  }}
-                >
-                  About
-                </a>
-              </h3>
-            </Box>
-            <Box
-              sx={{
-                display: ["none", "none", "flex", "flex", "flex"],
-                alignItems: "center",
-                justifyContent: "flex-end",
-                width: "20%",
+              About
+            </a>
+          </h3>
+        </Box>
+        <Box
+          sx={{
+            display: ["none", "none", "flex", "flex", "flex"],
+            alignItems: "center",
+            justifyContent: "flex-end",
+            width: "20%",
+          }}
+        >
+          <h3
+            sx={{
+              marginBottom: "0px",
+              fontFamily: "body",
+              fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
+            }}
+          >
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/gojek/ziggurat"
+              style={{
+                color: "white",
+                textDecoration: "none",
               }}
             >
-              <h3
-                sx={{
-                  marginBottom: "0px",
-                  fontFamily: "body",
-                  fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
-                }}
-              >
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/gojek/ziggurat"
-                  style={{
-                    color: "white",
-                    textDecoration: "none",
-                  }}
-                >
-                  Source
-                </a>
-              </h3>
-            </Box>
+              Source
+            </a>
+          </h3>
+        </Box>
       </Flex>
     </header>
   )

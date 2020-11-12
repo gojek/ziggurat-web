@@ -14,7 +14,6 @@ import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -53,7 +52,7 @@ const Layout = ({ children }) => {
               fontFamily: "body",
               textAlign: "center",
               marginBottom: "0px",
-              fontSize: ["0.8rem", "1rem", "1rem", "1rem", "1rem"]
+              fontSize: ["0.8rem", "1rem", "1rem", "1rem", "1rem"],
             }}
           >
             An open source project by gojek. Made with ❤️, ⚡️ and ☕️.

@@ -22,7 +22,7 @@ const IndexPage = () => (
           alignItems: "center",
           flexDirection: "column",
           justifyContent: "center",
-          alignItems: "center"
+          alignItems: "center",
         }}
       >
         <ZigguratLogo />
@@ -38,7 +38,7 @@ const IndexPage = () => (
           Redefining how you work with real time events.
         </h1>
         <p
-        className="gradient-text"
+          className="gradient-text"
           sx={{
             fontFamily: "body",
             fontSize: ["0.867rem", "1rem", "1.5rem", "2rem", "1.5rem"],
@@ -47,7 +47,7 @@ const IndexPage = () => (
             textAlign: "center",
           }}
         >
-            Powering more than 250 applications at Gojek.
+          Powering more than 250 applications at Gojek.
         </p>
         <br />
         <a
@@ -61,7 +61,7 @@ const IndexPage = () => (
             display: "flex",
             textDecoration: "none",
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
           }}
         >
           <h3
