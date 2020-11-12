@@ -5,8 +5,8 @@ export default {
   colors: {
     text: "#333",
     background: "#0e0e0e",
-    primary: "#54b67d",
-    secondary: "#ff6347",
+    primary: "#31C38B",
+    secondary: "#9B7D8E",
   },
   fonts: {
     body: "Maison Neue",
