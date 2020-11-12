@@ -8,10 +8,6 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    {/* <div sx={{
-      display: "flex", 
-      alignItems:"center",
-    }}> */}
     <section
       sx={{
         minHeight: "fit-content",
@@ -25,7 +21,8 @@ const IndexPage = () => (
         sx={{
           alignItems: "center",
           flexDirection: "column",
-          justifyContent: "center"
+          justifyContent: "center",
+          alignItems: "center"
         }}
       >
         <ZigguratLogo />
@@ -41,6 +38,7 @@ const IndexPage = () => (
           Redefining how you work with real time events.
         </h1>
         <p
+        className="gradient-text"
           sx={{
             fontFamily: "body",
             fontSize: ["0.867rem", "1rem", "1.5rem", "2rem", "1.5rem"],
@@ -49,9 +47,7 @@ const IndexPage = () => (
             textAlign: "center",
           }}
         >
-          <span className="gradient-text">
             Powering more than 250 applications at Gojek.
-          </span>
         </p>
         <br />
         <a
