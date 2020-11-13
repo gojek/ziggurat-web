@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      [master, responsive_design]
+      master
 
 jobs:
   deploy:
