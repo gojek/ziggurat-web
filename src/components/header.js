@@ -82,6 +82,33 @@ const Header = ({ siteTitle }) => (
         <h3
           sx={{
             marginBottom: "0px",
+            color: "white",
+            fontFamily: "body",
+            fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
+          }}
+        >
+          <a
+            href="/docs/concepts"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+          >
+            Docs
+          </a>
+        </h3>
+      </Box>
+      <Box
+        sx={{
+          display: ["none", "none", "flex", "flex", "flex"],
+          alignItems: "center",
+          justifyContent: "flex-end",
+          width: "20%",
+        }}
+      >
+        <h3
+          sx={{
+            marginBottom: "0px",
             fontFamily: "body",
             fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
           }}

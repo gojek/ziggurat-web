@@ -33,6 +33,8 @@ const IndexPage = () => (
             color: "white",
             textAlign: "center",
             letterSpacing: "0.05em",
+            marginLeft: "1.45rem",
+            marginRight: "1.45rem",
           }}
         >
           Redefining how you work with real time events.
@@ -100,6 +102,8 @@ const IndexPage = () => (
             fontFamily: "body",
             color: "white",
             fontSize: ["1.3rem", "1.5rem", "2.25rem", "3.5rem", "2.3rem"],
+            marginLeft: "1.45rem",
+            marginRight: "1.45rem",
           }}
         >
           Ziggurat
@@ -109,6 +113,7 @@ const IndexPage = () => (
             fontFamily: "body",
             color: "#9B7D8E",
             fontSize: ["0.867rem", "1rem", "1.5rem", "2.5rem", "1.8rem"],
+            margin: "1.45rem",
           }}
         >
           /ˈzɪɡʊˌræt/
