@@ -1,0 +1,37 @@
+---
+name: Nearby Driver Service
+route: /docs/nearby-driver-service
+menu: Use-Cases
+---
+
+# Nearby Driver Service
+---
+Whenever you use Go-jek to book a Ride or Car, the booking screen shows the drivers that are available to accept your request in the vicinity. This is made possible by Nearby Driver Service.
+
+[[images/nearby_driver_service_screenshot.jpeg]]
+ 
+Gojek has around a million drivers that power the various products that we offer. Every couple of seconds, the driver app for each online driver sends the driver's GPS location to our systems that is then written to a topic in Kafka. We have filters in place that filter out the locations for the drivers that are available, i.e. are not busy in other orders, and this is the stream of data that we are concerned about in Nearby Driver Service (this is getting repetitive, lets call it NDS). So the topic that NDS subscribes to is `available-driver-pings`.
+
+Then NDS reads data off from the topic saves the driver pings with key as s2id. Then mobile app makes the API call to this service and then service returns the available driver in the 
+
+NDS subscribes to the `available-driver-pings` topic and sinks the messages into a redis-cache. The key to these locations has the driver's s2id which is then queried while fetching the nearby drivers in a particular location.
+
+This is how the ziggurat interface is implemented in NDS
+```clojure
+(defn -main [& args]
+  (zig/main start-function stop-function {:available-driver-ping {:handler-fn redis/save-message}} routes/nds-routes))
+```
+
+The customer app makes an API call to NDS to fetch its nearby drivers. NDS fetches the available drivers (using on the S2ids) from the redis cache and returns the locations.
+Ziggurat exposes its HTTP server which handles these requests. `routes/actor-routes` define the route and the handler function the requests.
+```clojure
+(def nds-routes
+  [["gojek/service_type/" {[:service_type "/drivers/nearby"]
+                           {:get nearby-by-service-type}}]])
+```
+
+
+[[images/nearby_driver_service_diagram.png]]
+
+
+

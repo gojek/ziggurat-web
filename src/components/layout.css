@@ -51,8 +51,8 @@ template {
   display: none;
 }
 a {
-  margin-left: 1.45rem;
-  margin-right: 1.45rem;
+  margin-left: 0;
+  margin-right: 0;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -74,7 +74,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  margin: 1.45rem;
+  margin: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -255,8 +255,8 @@ textarea {
   box-sizing: inherit;
 }
 h2 {
-  margin-left: 1.45rem;
-  margin-right: 1.45rem;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
