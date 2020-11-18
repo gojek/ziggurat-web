@@ -39,7 +39,7 @@ Ziggurat Dev aims to be a one-stop destination for your use of Ziggurat. It enco
 
     Open the `ziggurat-web` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-##  Docs
+## 📝 Docs
 
 Ziggurat dev uses Docz for rendering docs. This means you can just place a document in the `docs` folder and it automatically gets grouped and rendered. Viola!
 
