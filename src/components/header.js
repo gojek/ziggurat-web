@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
           display: "flex",
           alignItems: "center",
           justifyContent: ["center", "center", "left", "left", "left"],
-          width: "60%",
+          width: "65%",
         }}
       >
         <h2
@@ -49,7 +49,7 @@ const Header = ({ siteTitle }) => (
           display: ["none", "none", "flex", "flex", "flex"],
           alignItems: "center",
           justifyContent: "flex-end",
-          width: "20%",
+          width: "10%",
         }}
       >
         <h3
@@ -76,34 +76,7 @@ const Header = ({ siteTitle }) => (
           display: ["none", "none", "flex", "flex", "flex"],
           alignItems: "center",
           justifyContent: "flex-end",
-          width: "20%",
-        }}
-      >
-        <h3
-          sx={{
-            marginBottom: "0px",
-            color: "white",
-            fontFamily: "body",
-            fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
-          }}
-        >
-          <a
-            href="/docs/concepts"
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-          >
-            Docs
-          </a>
-        </h3>
-      </Box>
-      <Box
-        sx={{
-          display: ["none", "none", "flex", "flex", "flex"],
-          alignItems: "center",
-          justifyContent: "flex-end",
-          width: "20%",
+          width: "12%",
         }}
       >
         <h3
@@ -123,6 +96,33 @@ const Header = ({ siteTitle }) => (
             }}
           >
             Source
+          </a>
+        </h3>
+      </Box>
+      <Box
+        sx={{
+          display: ["none", "none", "flex", "flex", "flex"],
+          alignItems: "center",
+          justifyContent: "flex-end",
+          width: "10%",
+        }}
+      >
+        <h3
+          sx={{
+            marginBottom: "0px",
+            color: "white",
+            fontFamily: "body",
+            fontSize: ["0.8rem", "0.8rem", "1rem", "1.2rem", "1.3rem"],
+          }}
+        >
+          <a
+            href="/docs/concepts"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+          >
+            Docs
           </a>
         </h3>
       </Box>
