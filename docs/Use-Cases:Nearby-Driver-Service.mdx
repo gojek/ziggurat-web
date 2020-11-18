@@ -8,8 +8,8 @@ menu: Use-Cases
 ---
 Whenever you use Go-jek to book a Ride or Car, the booking screen shows the drivers that are available to accept your request in the vicinity. This is made possible by Nearby Driver Service.
 
-[[images/nearby_driver_service_screenshot.jpeg]]
- 
+<img src="https://github.com/gojek/ziggurat/wiki/images/nearby_driver_service_screenshot.jpeg"/>
+<br/>
 Gojek has around a million drivers that power the various products that we offer. Every couple of seconds, the driver app for each online driver sends the driver's GPS location to our systems that is then written to a topic in Kafka. We have filters in place that filter out the locations for the drivers that are available, i.e. are not busy in other orders, and this is the stream of data that we are concerned about in Nearby Driver Service (this is getting repetitive, lets call it NDS). So the topic that NDS subscribes to is `available-driver-pings`.
 
 Then NDS reads data off from the topic saves the driver pings with key as s2id. Then mobile app makes the API call to this service and then service returns the available driver in the 
@@ -30,8 +30,7 @@ Ziggurat exposes its HTTP server which handles these requests. `routes/actor-rou
                            {:get nearby-by-service-type}}]])
 ```
 
-
-[[images/nearby_driver_service_diagram.png]]
+<img src="https://github.com/gojek/ziggurat/wiki/images/nearby_driver_service_diagram.png"/>
 
 
 

@@ -116,7 +116,7 @@ const Header = ({ siteTitle }) => (
           }}
         >
           <a
-            href="/docs/concepts"
+            href="/docs/home"
             style={{
               color: "white",
               textDecoration: "none",
