@@ -54,7 +54,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: "https://raw.githubusercontent.com/gojek/ziggurat-web/master/src/images/logo-ziggurat.png"
+          content: "https://i.postimg.cc/Kc3m1JfL/logo-ziggurat.png"
         },
         {
           property: `og:url`,
