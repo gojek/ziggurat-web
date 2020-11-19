@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      master
+      [master, google_analytics]
 
 jobs:
   deploy:

@@ -53,6 +53,14 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `https://ziggurat.dev/static/fdeb985c8fdfb86d78d865be65aee5e2/630fb/logo-ziggurat.png`
+        },
+        {
+          property: `og:url`,
+          content: `https://ziggurat.dev`
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
