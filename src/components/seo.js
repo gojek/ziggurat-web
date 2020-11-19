@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import zigguratLogo from "../images/logo-ziggurat.png"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -54,7 +55,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://ziggurat.dev/static/fdeb985c8fdfb86d78d865be65aee5e2/630fb/logo-ziggurat.png`
+          content: zigguratLogo
         },
         {
           property: `og:url`,
