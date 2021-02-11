@@ -4,6 +4,8 @@ on:
   push:
     branches:
       [master, google_analytics]
+  repository_dispatch:
+    types: [changelog-copy-event]
 
 jobs:
   deploy:
@@ -27,3 +29,8 @@ jobs:
         run: npm run deploy
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+  changelogCopyEvent:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.event.client_payload }}
