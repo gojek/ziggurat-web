@@ -1,11 +1,10 @@
-name: Deploy
+name: deploy
 
 on:
   push:
-    branches:
-      [master, google_analytics]
-  repository_dispatch:
-    types: [changelog-copy-event]
+    branches: [master, google_analytics]
+  workflow_dispatch:
+    branches: [master]
 
 jobs:
   deploy:
@@ -24,13 +23,8 @@ jobs:
 
       - name: Clean
         run: npm run clean
-        
+
       - name: Build and Deploy
         run: npm run deploy
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-  changelogCopyEvent:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo ${{ github.event.client_payload }}
