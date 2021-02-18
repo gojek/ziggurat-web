@@ -15,7 +15,13 @@ jobs:
           token: ${{secrets.GH_TOKEN}}
       - name: Copy changelog
         run: |
-          echo "---\nname: Release Notes\nroute: /docs/release-notes\n---\n" > /tmp/CHANGELOG.md
+          cat <<EOT >> /tmp/CHANGELOG.md
+          ---
+          name: Release Notes
+          route: /docs/release-notes
+          ---
+
+          EOT
           cat ./CHANGELOG.md >> /tmp/CHANGELOG.md
       - name: Checkout Ziggurat web repo
         uses: actions/checkout@v2
