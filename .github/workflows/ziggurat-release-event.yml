@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Ziggurat repo
         uses: actions/checkout@v2
         with:
-          repository: shubhang93/ziggurat #TODO change it to gojek/ziggurat
+          repository: gojek/ziggurat
           token: ${{secrets.GH_TOKEN}}
       - name: Copy changelog
         run: |
