@@ -1,0 +1,35 @@
+name: ziggurat-release-event
+
+on:
+  repository_dispatch:
+    types: [ziggurat-release-event]
+
+jobs:
+  changelog-copy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Ziggurat repo
+        uses: actions/checkout@v2
+        with:
+          repository: gojek/ziggurat
+          token: ${{secrets.GH_TOKEN}}
+      - name: Copy changelog
+        run: |
+          cp ./CHANGELOG.md /tmp/CHANGELOG.md
+
+      - name: Checkout Ziggurat web repo
+        uses: actions/checkout@v2
+        with:
+          token: ${{secrets.GH_TOKEN}}
+
+      - run: |
+          git config --global user.email 'github-actions@github.com'
+          git config --global user.name 'github-actions'
+
+      - name: Copy changelog From tmp
+        run: |
+          cp /tmp/CHANGELOG.md ./docs/Release-Notes.mdx
+          git add ./docs/Release-Notes.mdx
+          git commit -m "updates Release Notes"
+          git push origin master
+    #Pushing triggers a deployment automatically

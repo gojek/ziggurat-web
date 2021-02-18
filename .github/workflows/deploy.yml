@@ -1,9 +1,10 @@
-name: Deploy
+name: deploy
 
 on:
   push:
-    branches:
-      [master, google_analytics]
+    branches: [master, google_analytics]
+  workflow_dispatch:
+    branches: [master]
 
 jobs:
   deploy:
@@ -22,7 +23,7 @@ jobs:
 
       - name: Clean
         run: npm run clean
-        
+
       - name: Build and Deploy
         run: npm run deploy
         env:
