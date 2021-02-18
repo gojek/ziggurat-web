@@ -15,8 +15,8 @@ jobs:
           token: ${{secrets.GH_TOKEN}}
       - name: Copy changelog
         run: |
-          cp ./CHANGELOG.md /tmp/CHANGELOG.md
-
+          echo "---\nname: Release Notes\nroute: /docs/release-notes\n---\n" > /tmp/CHANGELOG.md
+          cat ./CHANGELOG.md >> /tmp/CHANGELOG.md
       - name: Checkout Ziggurat web repo
         uses: actions/checkout@v2
         with:
@@ -32,4 +32,4 @@ jobs:
           git add ./docs/Release-Notes.mdx
           git commit -m "updates Release Notes"
           git push origin master
-    #Pushing triggers a deployment automatically
+        #Pushing triggers a deployment automatically
